@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Certificate Maker{% endblock %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+  <textarea id="names" name="names" placeholder="Enter the names that need to appear on the certificate, One Name Per Line" style="height:200px"></textarea>
+  <textarea id="height" name="height" placeholder="Enter the height where we put the name" ></textarea>
+  <textarea id="font" name="font" placeholder="Enter the font size" ></textarea>
+  <input type="file" id="file" name="file">
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}
